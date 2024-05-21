@@ -1,5 +1,5 @@
 FROM nvidia/cuda:11.7.1-runtime-ubuntu20.04
-LABEL org.opencontainers.image.source https://github.com/T-Omine-sony/sd-webui-forge-docker
+LABEL org.opencontainers.image.source https://github.com/TaiseiOmineS/sd-webui-forge-docker
 WORKDIR /app
 RUN apt update && apt upgrade -y
 RUN apt install -y wget git python3 python3-venv libgl1 libglib2.0-0 apt-transport-https libgoogle-perftools-dev bc python3-pip
