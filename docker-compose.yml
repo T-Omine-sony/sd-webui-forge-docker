@@ -1,6 +1,6 @@
 services:
   webui:
-    # image: "ghcr.io/T-Omine-sony/sd-webui-forge-docker:latest"
+    # image: "ghcr.io/TaiseiOmineS/sd-webui-forge-docker:latest"
     build: .
     volumes:
       - "./data:/app/sd-webui"
