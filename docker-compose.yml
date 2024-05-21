@@ -1,13 +1,13 @@
 services:
   webui:
-    # image: "ghcr.io/yummiii/sd-webui-forge-docker:latest"
+    # image: "ghcr.io/T-Omine-sony/sd-webui-forge-docker:latest"
     build: .
     volumes:
       - "./data:/app/sd-webui"
     ports:
-      - "7860:7860"
+      - "9876:9876"
     environment:
-      - "ARGS=--listen --enable-insecure-extension-access"
+      - "ARGS=--device-id=2 --listen --enable-insecure-extension-access --xformers --skip-install"
     deploy:
       resources:
         reservations:
